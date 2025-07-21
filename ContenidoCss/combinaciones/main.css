@@ -1,0 +1,39 @@
+/*Seleccion por atributo*/
+
+[class]{
+    padding: 2%;
+    margin-right: 5%;
+}
+
+/*Combinacion de etiquetas con conbinadores*/
+
+a[href]{
+    color: blueviolet;
+    font-size: 22px;
+}
+
+/*Combinacin con sufijos*/
+
+a[href$=".com"]{
+    text-align: left;
+    color: fuchsia;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+
+/*Combinacion con prefijos*/
+
+article[class^="art"]{
+    text-align: justify;
+    color: green;
+    font-size: 20px;
+    border: 1px solid black;
+
+}
+
+.secciones ~ article {
+    background-color: lightblue;
+    padding: 2%;
+    margin: 1%;
+}
