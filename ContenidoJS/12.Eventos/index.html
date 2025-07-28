@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>
+        Eventos en JavaScript
+    </h1>
+    <p id="parrafo" class="parrafo">
+        las funciones o metodos son acciones qie se pueden realizar con cad uno
+        de lo elementos html o los nodos que componen el DOM que pueden
+        ser asignadas o moficicadas con atributos o el elemento por completo.
+
+    </p>
+    <p id="pregunta" class="parrafo" 
+        onmouseout="capturarMouseOut()">
+        ¿Estas de cauerdo con la afirmacion anterior? SI o NO
+    </p>
+    <p id="indicador">
+        COlocar la respuesta en la caja de texto
+    </p>
+    
+    <input type="text" name="respuesta" id="respuesta" 
+        onkeyup="soltarTecla()"
+        onkeypress="presionaTecla()"
+        onkeydown="funcionInput()">
+    <br>
+    <br>
+    <button id="confirmar" class="btnRepuesta" onclick="capturarClick()">
+        Enviar respuesta
+    </button>
+    <button id="teclado" class="teclado">
+        Presiona con una tecla
+    </button>
+    <button ondblclick="capturarDoblelick()">
+        Presiona CLick
+    </button>
+    <script src="./dist/keyboard.js"></script>
+    <script src="./dist/mouse.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!-- Estructura de un proyecto nativo
+ 1. Estilos-> 1archivo CSS
+ 2. Scripts -> 1 archivo JS distinto
+ 3. en la raiz del proyecto un index.html
+ 4. archivo para la pagina -> subcategorias de las paginas
+ 5. assets -> imagenes, fuentes, etc.
+ 6. others -> para cualquier otro archivo que no sea de los anteriores -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccion de Elementos en el DOM</title>
+ </head>
+ <body>
+        <header>
+            <h1>Seleccion de Elementos</h1>
+            <div class="Logo"> <img src="./assets/img/cat-g40cfe9c76_640.jpg" alt="" aria-label="Logo de la marca Coca-Cola">Logo</div>
+            <div>
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li><a href="">Principal</a></li>
+                        <li><a href="">Gato</a></li>
+                        <li><a href="">Perro</a></li>
+                        <li><a href="">Pollo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!--section.seccion>article*3>h2+p -->
+            <section class="seccion">
+                <article class="art-cats">
+                    <h2>gatos</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero iste quis doloremque repudiandae accusantium error non similique fuga corrupti ipsam? Praesentium ad temporibus minus provident, enim iure nostrum repellat animi!</p>
+                </article>
+                <article class="art-dogs">
+                    <h2>perros</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quidem deleniti enim nisi expedita eaque autem nam maiores numquam, repellat dolore in assumenda facilis. Ea, saepe sunt. Repellendus, sint adipisci.</p>
+                </article>
+                <article class="art-chickens">
+                    <h2>pollos</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, inventore? Dolores dignissimos molestias vero nihil, quo laboriosam quisquam omnis! Asperiores accusantium explicabo maxime delectus officiis atque similique, ullam obcaecati reprehenderit!</p>
+                </article>
+            </section>
+
+        </main>
+        <footer>
+            <p>Derechos reservados &copy; 2023</p>
+            </footer>   
+        <script src="./js/main.js"></script>
+ </body>
+ </html>
