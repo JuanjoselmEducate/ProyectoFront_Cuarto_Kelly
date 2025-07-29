@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
- 
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generando Eventos</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
- 
-<body>
-    <h1>Notas de un estudiante</h1>
-    <!-- Evento en el html -->
-    <button onclick="notasPromedio()" id="btn2Promedio">Cálculo promedio onClick</button>
-    <!-- Evento mediante propiedad -->
-    <button id="btn3Promedio">Calculo promedio "Propiedad" </button>
-    <!-- Evento mediante el método .addEventListener -->
-    <button id="btnPromedio">Calcular Promedio .addEventLis...</button>
- 
+
+<body class="body">
+    <secction class="seccionprincipal">
+        <h1 class="titulo">Notas de un estudiante</h1>
+        <!-- Evento en el html -->
+        <button onclick="notasPromedio()" id="btn2Promedio" class="evt evt-onclick">
+            Cálculo promedio onClick
+        </button>
+        <!-- Evento mediante propiedad -->
+        <button id="btn3Promedio" class="evt evt-propiedad">
+            Calculo promedio "Propiedad"
+        </button>
+        <!-- Evento mediante el método .addEventListener -->
+        <button id="btnPromedio" class="evt evt-addEventListener">
+            Calcular Promedio .addEventLis...
+        </button>
+    </secction>
+
     <script src="main.js"></script>
- 
 </body>
- 
+
 </html>
